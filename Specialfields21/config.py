@@ -9,7 +9,7 @@ userOption = None
 def _getUserOption(refresh):
     global userOption
     if userOption is None or refresh:
-        userOption = mw.addonManager.getConfig(__name__)
+        userOption = mw.addonManager.getConfig("Special Fields")
 
 
 def getUserOption(key=None, default=None, refresh=False):
